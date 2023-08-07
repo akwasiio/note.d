@@ -53,6 +53,5 @@ dependencies {
     implementation(libs.koin.androidx.compose)
     implementation(libs.activity.compose)
     implementation(libs.koin.android)
-    implementation(libs.napier)
     implementation(libs.navigation.compose)
 }

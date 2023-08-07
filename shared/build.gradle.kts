@@ -51,7 +51,6 @@ kotlin {
                 //put your multiplatform dependencies here
                 implementation(libs.koin)
                 implementation(libs.sqldelight.coroutines)
-                implementation(libs.napier)
             }
 
         }
