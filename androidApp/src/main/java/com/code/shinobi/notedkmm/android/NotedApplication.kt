@@ -5,8 +5,6 @@ import com.code.shinobi.notedkmm.android.ui.AllNotesViewModel
 import com.code.shinobi.notedkmm.android.ui.CreateNoteViewModel
 import com.code.shinobi.notedkmm.android.ui.EditNoteViewModel
 import com.code.shinobi.notedkmm.di.initKoin
-import io.github.aakira.napier.DebugAntilog
-import io.github.aakira.napier.Napier
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -18,7 +16,6 @@ class NotedApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        Napier.base(DebugAntilog())
         initKoin {
             androidContext(this@NotedApplication)
             modules(androidModule)
